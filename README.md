@@ -1,3 +1,0 @@
-# curso-trade
-
-teste
