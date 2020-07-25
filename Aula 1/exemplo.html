@@ -1,0 +1,42 @@
+<html> 
+  <head>
+      <title>Aula 1</title>
+  </head>
+
+  <body>
+     <h1>Notas</h1>
+     
+     <!-- regras:
+     1º criar tags em lowerCase
+     2º fechar tag quando abrir
+     3º identar codigo -->
+    
+     <script>
+         //alert("oi ");
+         // 1º JavaScript não é Java
+         // 2º JavaScript é ecmaScript
+         // 3  JavaScript é CaseSensitive
+         // 4º JavaScript deve ser escrito em camelCase.
+         // javaScrip é fracamente tipada
+         // camelCase  => tB
+         // PascalCase => TB
+         // kibab-case => t-b
+         // snake_case => t_b
+
+         var nota1 = parseFloat(prompt(' Digite a 1º Nota:'));
+         var nota2 = parseFloat(prompt(' Digite a 2º Nota:'));
+         var nota3 = parseFloat(prompt(' Digite a 3º Nota:'));
+         var nota4 = parseFloat(prompt(' Digite a 4º Nota:'));
+
+         var somaNotas = (nota1 + nota2 + nota3 + nota4);
+         var mediaNotas = (somaNotas / 4);
+
+         document.writeln(' Soma das Notas: ' + somaNotas);
+         document.writeln('<br>');
+         document.writeln('Media das Notas: ' + mediaNotas);
+
+
+     </script>
+  </body>
+
+</html>
