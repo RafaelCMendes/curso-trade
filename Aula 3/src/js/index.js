@@ -23,24 +23,42 @@
 //     document.write(numero1 + ' x ' + m + ' = ' + resultado + '<br>');
 // }
 
-var nome = 10;
+// var nome = 10;
 
-function teste(){
-    var nome = 9;
-    document.write(nome + '<br>');
-    document.write(this.nome + '<br>');
+// function teste(){
+//     var nome = 9;
+//     document.write(nome + '<br>');
+//     document.write(this.nome + '<br>');
+// }
+
+// if(true){
+//     let  nome = 9;
+//     document.write(nome + '<br>');
+//     document.write(this.nome + '<br>');  
+// }
+
+// document.write(nome + '<br>');  
+
+
+function PessoaFisica(a) {
+    var cpf = a;
+
+    this.getCPF = function () {
+        return cpf;
+    };
+
+    this.setCPF = function (value) {
+        cpf = value;
+    };
 }
 
-if(true){
-    let  nome = 9;
-    document.write(nome + '<br>');
-    document.write(this.nome + '<br>');  
-}
 
-document.write(nome + '<br>');  
+
+const   te = new PessoaFisica('trrr');
 
 
 
+document.write(te.getCPF());
 
 
 
