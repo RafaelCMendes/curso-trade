@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "C:/Users/DESENVOLVIMENTO1/Desktop/Alula%20Web/curso-trade/Aula%204/src/index.html",
+            "url": "file:///D:/PROGRAMACAO/Curso%20Web/curso-trade/Aula%204/src/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

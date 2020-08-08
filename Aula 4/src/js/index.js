@@ -28,6 +28,7 @@
 // console.log(teste[0].nome);
 
 
+
 let edtEmail = document.getElementById('email');
 let edtSenha = document.getElementById('senha');
 let btnEntrar = document.getElementById('btn-entrar');
@@ -44,12 +45,27 @@ btnEntrar.addEventListener("click", function () {
 
     } else {
 
-        if ((email.localeCompare(userLogin) == 0) && (senha.equals(userSenha) == 0)) {
+        
             console.log('logado');
 
-        } else {
-            alert("Login ou senha incorretos!");
-        }
+            firebase.auth().signInWithEmailAndPassword(email, senha)
+              .then(function(result) {
+                alert("Seu id é: " + result.user.uid);
+               
+                if (firebase.auth().currentUser !== null) 
+                console.log("user id: " + firebase.auth().currentUser.uid);
+          
+
+              }).catch(function(error) {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                console.log(errorCode);
+                console.log(errorMessage);
+
+              });
+
+              
+ 
     }
 });
 
